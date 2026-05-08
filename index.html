@@ -222,9 +222,11 @@
       id: q.id,
       type: q.type,
       difficulty: q.difficulty,
-      correct: isCorrect,
+      questionText: q.questionText,   // <-- added
+      options: q.options || [],       // <-- added
       userAnswer: userAnswer,
       correctAnswer: q.correctAnswer,
+      correct: isCorrect,
       timestamp: new Date().toISOString()
     };
     let stats = JSON.parse(localStorage.getItem('mensa_stats')) || [];
