@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parent Dashboard - Mensa Stats</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #f4f9ff; margin: 0; padding: 20px; }
+    .container { max-width: 1000px; margin: auto; background: white; border-radius: 48px; padding: 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+    h1 { color: #1e466e; }
+    h2 { margin-top: 30px; border-left: 8px solid #ffaa33; padding-left: 15px; }
+    table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+    th, td { padding: 10px; text-align: left; border-bottom: 1px solid #ddd; }
+    th { background: #e9f0fa; }
+    .good { background: #d4f0d4; }
+    .needs-work { background: #ffe0cc; }
+    button { background: #2c6e2c; color: white; padding: 10px 20px; border: none; border-radius: 30px; cursor: pointer; margin: 5px; }
+    .export-btn { background: #2c6e6e; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>📊 Progress Dashboard</h1>
+  <button id="clearStatsBtn" style="background:#b13e3e;">🗑️ Clear All Stats</button>
+  <button id="exportStatsBtn" class="export-btn">📎 Export to JSON</button>
+
+  <h2>📈 Accuracy by Question Type</h2>
+  <div id="byType"></div>
+
+  <h2>🎯 Accuracy by Difficulty Level</h2>
+  <div id="byDifficulty"></div>
+
+  <h2>📋 Last 20 Attempts</h2>
+  <div id="recentTable"></div>
+</div>
+
+<script>
+  function loadStats() {
+    const raw = localStorage.getItem('mensa_stats');
+    if (!raw) {
+      document.getElementById('byType').innerHTML = '<p>No attempts yet. Let your son play first!</p>';
+      return;
+    }
+    const stats = JSON.parse(raw);
+    if (stats.length === 0) {
+      document.getElementById('byType').innerHTML = '<p>No data.</p>';
+      return;
+    }
+
+    // Accuracy by type
+    const typeMap = new Map();
+    stats.forEach(s => {
+      if (!typeMap.has(s.type)) typeMap.set(s.type, { total: 0, correct: 0 });
+      const rec = typeMap.get(s.type);
+      rec.total++;
+      if (s.correct) rec.correct++;
+    });
+    let typeHtml = '<table><tr><th>Type</th><th>Correct / Total</th><th>Accuracy</th></tr>';
+    for (let [type, data] of typeMap.entries()) {
+      const acc = Math.round((data.correct / data.total) * 100);
+      const rowClass = (acc >= 70) ? 'good' : (acc < 50 ? 'needs-work' : '');
+      typeHtml += `<tr class="${rowClass}"><td>${type}</td><td>${data.correct}/${data.total}</td><td>${acc}%</td></tr>`;
+    }
+    typeHtml += '</table>';
+    document.getElementById('byType').innerHTML = typeHtml;
+
+    // By difficulty
+    const diffMap = new Map();
+    stats.forEach(s => {
+      if (!diffMap.has(s.difficulty)) diffMap.set(s.difficulty, { total: 0, correct: 0 });
+      const d = diffMap.get(s.difficulty);
+      d.total++;
+      if (s.correct) d.correct++;
+    });
+    let diffHtml = '<table><tr><th>Difficulty</th><th>Correct / Total</th><th>Accuracy</th><th>Need more practice?</th></tr>';
+    for (let [level, data] of diffMap.entries()) {
+      const acc = (data.correct / data.total) * 100;
+      const advice = (acc < 60) ? '⚠️ Focus on this level' : (acc > 80 ? '✅ Mastered' : '👍 Good');
+      diffHtml += `<tr><td>⭐ ${level}</td><td>${data.correct}/${data.total}</td><td>${Math.round(acc)}%</td><td>${advice}</td></tr>`;
+    }
+    diffHtml += '</table>';
+    document.getElementById('byDifficulty').innerHTML = diffHtml;
+
+    // Recent attempts (last 20)
+    const recent = stats.slice(-20).reverse();
+    let recentHtml = '<table><tr><th>Time</th><th>Type</th><th>Difficulty</th><th>Result</th><th>Your answer / Correct</th></tr>';
+    recent.forEach(r => {
+      const date = new Date(r.timestamp).toLocaleTimeString();
+      const resultEmoji = r.correct ? '✅ Correct' : '❌ Wrong';
+      recentHtml += `<tr>
+        <td>${date}</td>
+        <td>${r.type}</td>
+        <td>${r.difficulty}</td>
+        <td>${resultEmoji}</td>
+        <td>${r.userAnswer} / ${r.correctAnswer}</td>
+      </tr>`;
+    });
+    recentHtml += '</table>';
+    document.getElementById('recentTable').innerHTML = recentHtml;
+  }
+
+  document.getElementById('clearStatsBtn').addEventListener('click', () => {
+    if (confirm('⚠️ Delete all progress for your son? This cannot be undone.')) {
+      localStorage.removeItem('mensa_stats');
+      loadStats(); // refresh page view
+      alert('All stats cleared.');
+    }
+  });
+
+  document.getElementById('exportStatsBtn').addEventListener('click', () => {
+    const raw = localStorage.getItem('mensa_stats');
+    if (!raw) return alert('No data to export.');
+    const blob = new Blob([raw], {type: 'application/json'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `mensa_stats_${new Date().toISOString().slice(0,19)}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  loadStats();
+</script>
+</body>
+</html>
