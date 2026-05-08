@@ -1,0 +1,31 @@
+{
+  "exercises": [
+    {
+      "id": 1,
+      "type": "number-series",
+      "difficulty": 1,
+      "questionText": "What comes next? 1, 2, 3, 4, __",
+      "correctAnswer": 5,
+      "options": [5, 6, 4, 7],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 2,
+      "type": "number-series",
+      "difficulty": 1,
+      "questionText": "Next number: 10, 9, 8, __",
+      "correctAnswer": 7,
+      "options": [6, 7, 5, 8],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 3,
+      "type": "pattern",
+      "difficulty": 2,
+      "questionText": "Find the missing: ▲ ● ▲ ● ▲ __",
+      "correctAnswer": "●",
+      "options": ["▲", "●", "■", "★"],
+      "answerType": "multiple-choice"
+    }
+  ]
+}
