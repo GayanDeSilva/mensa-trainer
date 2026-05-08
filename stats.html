@@ -80,22 +80,19 @@
     diffHtml += '</table>';
     document.getElementById('byDifficulty').innerHTML = diffHtml;
 
-    // Recent attempts (last 20)
-    const recent = stats.slice(-20).reverse();
-    let recentHtml = '<table><tr><th>Time</th><th>Type</th><th>Difficulty</th><th>Result</th><th>Your answer / Correct</th></tr>';
-    recent.forEach(r => {
-      const date = new Date(r.timestamp).toLocaleTimeString();
-      const resultEmoji = r.correct ? '✅ Correct' : '❌ Wrong';
-      recentHtml += `<tr>
-        <td>${date}</td>
+// Show ALL attempts (or last 50)
+    let allHistoryHtml = '<table><tr><th>Date</th><th>Type</th><th>Question</th><th>Your answer</th><th>Correct?</th></tr>';
+    stats.slice().reverse().forEach(r => {
+      allHistoryHtml += `<tr>
+        <td>${new Date(r.timestamp).toLocaleString()}</td>
         <td>${r.type}</td>
-        <td>${r.difficulty}</td>
-        <td>${resultEmoji}</td>
-        <td>${r.userAnswer} / ${r.correctAnswer}</td>
+        <td>${r.questionText}</td>
+        <td>${r.userAnswer}</td>
+        <td>${r.correct ? '✅' : '❌ (correct: '+r.correctAnswer+')'}</td>
       </tr>`;
     });
-    recentHtml += '</table>';
-    document.getElementById('recentTable').innerHTML = recentHtml;
+    allHistoryHtml += '</table>';
+    document.getElementById('recentTable').innerHTML = allHistoryHtml;
   }
 
   document.getElementById('clearStatsBtn').addEventListener('click', () => {
