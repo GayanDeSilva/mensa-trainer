@@ -43,6 +43,19 @@
       margin: 20px 0;
       word-break: break-word;
     }
+    .graphic-area {
+      background: #f9f9ff;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .graphic-area svg, .graphic-area img {
+      max-width: 100%;
+      height: auto;
+    }
     .options-area {
       display: flex;
       flex-wrap: wrap;
@@ -113,6 +126,7 @@
   <h1>🧠 Brain Gym</h1>
   <div class="difficulty-badge" id="difficultyBadge">⭐ Difficulty 1</div>
   <div class="question-text" id="questionText">Loading...</div>
+  <div id="graphicArea" class="graphic-area" style="display: none;"></div>
   <div id="answerArea"></div>
   <div id="feedback" class="feedback"></div>
   <button id="nextButton" class="next-btn" style="display:none;">➡ Next Puzzle</button>
@@ -129,7 +143,7 @@
   // ----- LOAD EXERCISES FROM JSON FILE -----
   async function loadExercises() {
     try {
-      const response = await fetch('exercises.json?t=' + Date.now()); // cache buster
+      const response = await fetch('exercises.json?t=' + Date.now());
       const data = await response.json();
       exercises = data.exercises;
       if (!exercises.length) throw new Error("No exercises found");
@@ -141,30 +155,45 @@
     }
   }
 
-  // ----- DISPLAY CURRENT QUESTION -----
+  // ----- DISPLAY CURRENT QUESTION (including graphics) -----
   function showQuestion() {
     waitingForNext = false;
     document.getElementById('nextButton').style.display = 'none';
     document.getElementById('feedback').innerHTML = '';
+    
     const q = exercises[currentIndex];
     if (!q) {
       document.getElementById('questionText').innerText = "🎉 You finished all puzzles! Well done! 🎉";
       document.getElementById('answerArea').innerHTML = '';
+      document.getElementById('graphicArea').style.display = 'none';
       return;
     }
+    
     currentQuestion = q;
     document.getElementById('questionText').innerHTML = q.questionText;
     document.getElementById('difficultyBadge').innerHTML = `⭐ Difficulty ${q.difficulty}  •  ${getTypeEmoji(q.type)} ${q.type}`;
     
-    // build answer area based on answerType
+    // --- Handle optional graphic (SVG, emoji, or HTML) ---
+    const graphicDiv = document.getElementById('graphicArea');
+    if (q.graphic && q.graphic.trim() !== "") {
+      graphicDiv.innerHTML = q.graphic;
+      graphicDiv.style.display = 'flex';
+    } else {
+      graphicDiv.innerHTML = '';
+      graphicDiv.style.display = 'none';
+    }
+    
+    // --- Build answer area based on answerType ---
     const answerDiv = document.getElementById('answerArea');
     answerDiv.innerHTML = '';
+    
     if (q.answerType === 'multiple-choice' && q.options && q.options.length) {
       const optionsDiv = document.createElement('div');
       optionsDiv.className = 'options-area';
       q.options.forEach(opt => {
         const btn = document.createElement('button');
         btn.className = 'option-btn';
+        // Show the option as text (supports emojis automatically)
         btn.innerText = opt;
         btn.onclick = () => submitAnswer(opt);
         optionsDiv.appendChild(btn);
@@ -195,8 +224,8 @@
 
   function getTypeEmoji(type) {
     if (type.includes('number')) return '🔢';
-    if (type.includes('pattern')) return '🌀';
-    if (type.includes('logic')) return '🧩';
+    if (type.includes('pattern') || type.includes('emoji')) return '🌀';
+    if (type.includes('matrix') || type.includes('logic')) return '🧩';
     return '📚';
   }
 
@@ -208,22 +237,24 @@
     fb.style.borderRadius = '50px';
   }
 
-  // ----- RECORD ANSWER & STATS -----
+  // ----- RECORD ANSWER & STATS (includes question text for history) -----
   function submitAnswer(userAnswer) {
     if (waitingForNext) {
       showFeedback("✅ Already answered! Press Next.", "#ffe0b3");
       return;
     }
     const q = currentQuestion;
+    // Normalize answer comparison (string vs number)
     const isCorrect = (userAnswer == q.correctAnswer);
     
-    // Record attempt in localStorage
+    // Record full attempt in localStorage
     const record = {
       id: q.id,
       type: q.type,
       difficulty: q.difficulty,
-      questionText: q.questionText,   // <-- added
-      options: q.options || [],       // <-- added
+      questionText: q.questionText,
+      options: q.options || [],
+      graphic: q.graphic || null,
       userAnswer: userAnswer,
       correctAnswer: q.correctAnswer,
       correct: isCorrect,
@@ -242,7 +273,7 @@
     
     waitingForNext = true;
     document.getElementById('nextButton').style.display = 'inline-block';
-    // disable answer inputs (optional)
+    // Disable answer inputs
     const btns = document.querySelectorAll('.option-btn, .submit-btn');
     btns.forEach(btn => btn.disabled = true);
     const numInput = document.getElementById('userNumberInput');
@@ -257,9 +288,9 @@
     }
     currentIndex++;
     if (currentIndex >= exercises.length) {
-      // loop or finish: you can reset to 0 or show finish
       document.getElementById('questionText').innerText = "🏆 Amazing! You finished all puzzles. 🏆";
       document.getElementById('answerArea').innerHTML = '';
+      document.getElementById('graphicArea').style.display = 'none';
       document.getElementById('nextButton').style.display = 'none';
       document.getElementById('feedback').innerHTML = '<span>⭐ Come back tomorrow for new puzzles! ⭐</span>';
       return;
