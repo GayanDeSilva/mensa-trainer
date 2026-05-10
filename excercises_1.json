@@ -1,0 +1,184 @@
+{
+  "exercises": [
+    {
+      "id": 1,
+      "type": "number-series",
+      "difficulty": 1,
+      "questionText": "1, 2, 3, 4, __",
+      "correctAnswer": 5,
+      "options": [5, 6, 7, 8],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 2,
+      "type": "number-series",
+      "difficulty": 1,
+      "questionText": "10, 9, 8, 7, __",
+      "correctAnswer": 6,
+      "options": [5, 6, 9, 10],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 3,
+      "type": "number-series",
+      "difficulty": 1,
+      "questionText": "2, 4, 6, 8, __",
+      "correctAnswer": 10,
+      "options": [9, 10, 12, 14],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 4,
+      "type": "number-series",
+      "difficulty": 2,
+      "questionText": "5, 10, 15, 20, __",
+      "correctAnswer": 25,
+      "options": [24, 25, 30, 35],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 5,
+      "type": "number-series",
+      "difficulty": 2,
+      "questionText": "3, 6, 9, 12, __",
+      "correctAnswer": 15,
+      "options": [14, 15, 18, 21],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 6,
+      "type": "emoji-pattern",
+      "difficulty": 1,
+      "questionText": "😊 😊 😊 😊 ? (What comes next?)",
+      "correctAnswer": "😊",
+      "options": ["😊", "😢", "😡", "😴"],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 7,
+      "type": "emoji-pattern",
+      "difficulty": 1,
+      "questionText": "🐶 🐱 🐶 🐱 ?",
+      "correctAnswer": "🐶",
+      "options": ["🐶", "🐱", "🐭", "🐹"],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 8,
+      "type": "emoji-pattern",
+      "difficulty": 2,
+      "questionText": "⭐ 🌙 ⭐ 🌙 ⭐ ?",
+      "correctAnswer": "🌙",
+      "options": ["⭐", "🌙", "☀️", "🌈"],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 9,
+      "type": "emoji-pattern",
+      "difficulty": 2,
+      "questionText": "🍎 🍌 🍎 🍌 🍎 ?",
+      "correctAnswer": "🍌",
+      "options": ["🍎", "🍌", "🍒", "🍊"],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 10,
+      "type": "logical-matrix",
+      "difficulty": 2,
+      "questionText": "▲ ■ ▲ ■ ▲ ? (Which shape is next?)",
+      "correctAnswer": "■",
+      "options": ["▲", "■", "●", "◆"],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 11,
+      "type": "logical-matrix",
+      "difficulty": 2,
+      "questionText": "← ↑ → ↓ ← ↑ → ? (Which arrow comes next?)",
+      "correctAnswer": "↓",
+      "options": ["←", "↑", "→", "↓"],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 12,
+      "type": "logical-matrix",
+      "difficulty": 3,
+      "questionText": "🟥 🟨 🟥 🟨 🟥 ? (Color pattern: red, yellow, red, yellow, red, ___)",
+      "correctAnswer": "🟨",
+      "options": ["🟥", "🟨", "🟩", "🟦"],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 13,
+      "type": "logical-matrix",
+      "difficulty": 3,
+      "questionText": "If ★ = 1, ★★ = 2, ★★★ = 3, then ★★★★★ = ?",
+      "correctAnswer": 5,
+      "options": [4, 5, 6, 7],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 14,
+      "type": "number-series",
+      "difficulty": 3,
+      "questionText": "1, 1, 2, 3, 5, __ (It's the Fibonacci sequence!)",
+      "correctAnswer": 8,
+      "options": [7, 8, 9, 10],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 15,
+      "type": "emoji-pattern",
+      "difficulty": 3,
+      "questionText": "🍕 🍔 🍕 🍔 🍕 ?",
+      "correctAnswer": "🍔",
+      "options": ["🍕", "🍔", "🍟", "🌭"],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 16,
+      "type": "logical-matrix",
+      "difficulty": 3,
+      "questionText": "⬅️ ➡️ ⬅️ ➡️ ⬅️ ?",
+      "correctAnswer": "➡️",
+      "options": ["⬅️", "➡️", "⬆️", "⬇️"],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 17,
+      "type": "number-series",
+      "difficulty": 2,
+      "questionText": "2, 4, 8, 16, __",
+      "correctAnswer": 32,
+      "options": [24, 32, 64, 128],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 18,
+      "type": "emoji-pattern",
+      "difficulty": 2,
+      "questionText": "🐸 🐸 🐸 🐸 ?",
+      "correctAnswer": "🐸",
+      "options": ["🐸", "🐒", "🐧", "🐛"],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 19,
+      "type": "logical-matrix",
+      "difficulty": 3,
+      "questionText": "🟢 🟡 🟢 🟡 🟢 ? (Green, yellow, green, yellow, green, ___)",
+      "correctAnswer": "🟡",
+      "options": ["🟢", "🟡", "🟠", "🔴"],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 20,
+      "type": "number-series",
+      "difficulty": 3,
+      "questionText": "100, 90, 81, 73, 66, __ (Hint: subtract 10, then 9, then 8, then 7, then …)",
+      "correctAnswer": 60,
+      "options": [58, 60, 61, 62],
+      "answerType": "multiple-choice"
+    }
+  ]
+}
