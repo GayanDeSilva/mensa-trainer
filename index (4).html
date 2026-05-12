@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Mensa Trainer for Kids</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; user-select: none; }
+    :root {
+      --blue:#3b82f6; --green:#22c55e; --orange:#f97316;
+      --purple:#8b5cf6; --red:#ef4444; --bg:#f0f4ff; --card:#ffffff;
+      --text:#1e293b; --muted:#64748b;
+    }
+    body { font-family:'Nunito','Comic Neue','Segoe UI',sans-serif; background:var(--bg); margin:0; padding:16px; min-height:100vh; }
+    .app { max-width:700px; margin:0 auto; }
+
+    /* HEADER */
+    .header { text-align:center; margin-bottom:14px; }
+    .header h1 { font-size:2rem; font-weight:900; color:var(--text); margin:0 0 4px; letter-spacing:-0.5px; }
+    .header p { color:var(--muted); font-size:.9rem; margin:0; }
+
+    /* PROGRESS */
+    .progress-wrap { background:#e2e8f0; border-radius:100px; height:10px; margin:10px 0 5px; overflow:hidden; }
+    .progress-bar  { height:100%; border-radius:100px; background:linear-gradient(90deg,var(--blue),var(--purple)); transition:width .5s ease; }
+    .progress-label { display:flex; justify-content:space-between; font-size:.8rem; color:var(--muted); margin-bottom:4px; }
+
+    /* CARD */
+    .card { background:var(--card); border-radius:28px; padding:22px 18px; box-shadow:0 8px 32px rgba(0,0,0,.08); }
+
+    /* META */
+    .meta-row { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:14px; }
+    .badge { display:inline-flex; align-items:center; gap:4px; padding:4px 12px; border-radius:100px; font-size:.8rem; font-weight:700; }
+    .badge-diff-1 { background:#dcfce7; color:#15803d; }
+    .badge-diff-2 { background:#fef9c3; color:#a16207; }
+    .badge-diff-3 { background:#fee2e2; color:#b91c1c; }
+    .badge-cat    { background:#ede9fe; color:#6d28d9; }
+    .badge-num    { background:#dbeafe; color:#1d4ed8; margin-left:auto; font-weight:800; }
+
+    /* QUESTION */
+    .question-text { font-size:1.2rem; font-weight:700; color:var(--text); text-align:center; line-height:1.4; margin-bottom:14px; }
+
+    /* GRAPHIC */
+    .graphic-area { background:#f8fafc; border:2px solid #e2e8f0; border-radius:18px; padding:10px; margin-bottom:16px; overflow-x:auto; }
+    .graphic-area svg { display:block; max-width:100%; }
+
+    /* STANDARD OPTIONS (multiple-choice) */
+    .options-grid { display:grid; gap:10px; margin-bottom:14px; }
+    .options-grid.n4 { grid-template-columns:1fr 1fr; }
+    .options-grid.n3 { grid-template-columns:1fr 1fr 1fr; }
+    .option-btn {
+      background:#f1f5f9; border:2.5px solid #e2e8f0; border-radius:14px;
+      padding:12px 8px; font-size:.95rem; font-weight:700; font-family:inherit;
+      color:var(--text); cursor:pointer; transition:all .15s;
+      text-align:center; min-height:56px; display:flex; align-items:center; justify-content:center; line-height:1.3;
+    }
+    .option-btn:hover:not(:disabled) { background:#dbeafe; border-color:var(--blue); transform:translateY(-2px); box-shadow:0 4px 12px rgba(59,130,246,.2); }
+    .option-btn:active:not(:disabled) { transform:scale(.97); }
+    .option-btn.correct { background:#dcfce7; border-color:var(--green); color:#15803d; }
+    .option-btn.wrong   { background:#fee2e2; border-color:var(--red);   color:#b91c1c; }
+    .option-btn:disabled { cursor:not-allowed; opacity:.85; }
+
+    /* MATRIX CHOICE (Raven's) */
+    .matrix-options { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px; }
+    .matrix-btn {
+      background:#f8fafc; border:3px solid #e2e8f0; border-radius:16px;
+      padding:10px 6px 6px; cursor:pointer; transition:all .15s;
+      display:flex; flex-direction:column; align-items:center; gap:6px;
+      font-family:inherit;
+    }
+    .matrix-btn .lbl { font-size:1rem; font-weight:800; color:var(--muted); }
+    .matrix-btn svg  { display:block; width:80px; height:80px; }
+    .matrix-btn:hover:not(:disabled) { border-color:var(--blue); background:#eff6ff; transform:translateY(-2px); box-shadow:0 4px 16px rgba(59,130,246,.18); }
+    .matrix-btn:active:not(:disabled){ transform:scale(.97); }
+    .matrix-btn.correct { border-color:var(--green); background:#dcfce7; }
+    .matrix-btn.wrong   { border-color:var(--red);   background:#fee2e2; }
+    .matrix-btn:disabled { cursor:not-allowed; }
+
+    /* NUMBER INPUT */
+    .number-area { display:flex; flex-direction:column; align-items:center; gap:12px; margin-bottom:14px; }
+    .number-input { width:130px; height:68px; font-size:2rem; font-weight:800; font-family:inherit; text-align:center; border:3px solid #e2e8f0; border-radius:14px; background:#f8fafc; color:var(--text); outline:none; transition:border-color .2s; }
+    .number-input:focus { border-color:var(--blue); }
+    .check-btn { background:var(--blue); color:white; font-size:1rem; font-weight:800; font-family:inherit; padding:13px 32px; border:none; border-radius:13px; cursor:pointer; transition:all .15s; }
+    .check-btn:hover { background:#2563eb; transform:translateY(-1px); }
+
+    /* FEEDBACK */
+    .feedback-box { border-radius:14px; padding:12px 16px; font-size:1rem; font-weight:700; text-align:center; margin-bottom:14px; display:none; }
+    .feedback-box.correct { background:#dcfce7; color:#15803d; display:block; }
+    .feedback-box.wrong   { background:#fee2e2; color:#991b1b; display:block; }
+
+    /* HINT */
+    .hint-box { background:#f8fafc; border-radius:10px; padding:8px 14px; font-size:.8rem; color:var(--muted); margin-bottom:12px; display:none; }
+
+    /* NEXT */
+    .next-btn { display:block; width:100%; background:var(--orange); color:white; font-size:1.1rem; font-weight:800; font-family:inherit; padding:15px; border:none; border-radius:15px; cursor:pointer; transition:all .15s; }
+    .next-btn:hover  { background:#ea6a00; transform:translateY(-1px); }
+    .next-btn:active { transform:scale(.98); }
+
+    /* SCORE */
+    .score-strip { display:flex; justify-content:center; gap:24px; margin-top:16px; padding:12px 20px; background:white; border-radius:16px; box-shadow:0 2px 12px rgba(0,0,0,.06); }
+    .score-item { text-align:center; }
+    .score-num { font-size:1.6rem; font-weight:900; color:var(--text); }
+    .score-lbl { font-size:.73rem; color:var(--muted); font-weight:600; }
+
+    /* FINISH */
+    .finish-screen { text-align:center; padding:16px 0; }
+    .finish-screen .trophy { font-size:5rem; }
+    .finish-screen h2 { font-size:1.8rem; font-weight:900; color:var(--text); margin:10px 0 8px; }
+    .finish-screen p  { font-size:1rem; color:var(--muted); margin:0 0 18px; }
+    .restart-btn { background:var(--purple); color:white; font-size:1rem; font-weight:800; font-family:inherit; padding:14px 32px; border:none; border-radius:14px; cursor:pointer; }
+
+    .stats-footer { text-align:center; margin-top:12px; font-size:.8rem; color:var(--muted); }
+    .stats-footer a { color:var(--blue); font-weight:700; }
+
+    @media(max-width:420px){
+      .question-text{font-size:1rem}
+      .option-btn,.matrix-btn{font-size:.85rem}
+      .score-num{font-size:1.2rem}
+    }
+  </style>
+</head>
+<body>
+<div class="app">
+  <div class="header">
+    <h1>🧠 Brain Gym</h1>
+    <p>Mensa-style puzzles for curious kids</p>
+  </div>
+
+  <div class="progress-label">
+    <span id="progText">Question 1</span>
+    <span id="progPct">0%</span>
+  </div>
+  <div class="progress-wrap"><div class="progress-bar" id="progressBar" style="width:0%"></div></div>
+
+  <div class="card" id="mainCard">
+    <div class="meta-row">
+      <span class="badge badge-diff-1" id="diffBadge">⭐ Level 1</span>
+      <span class="badge badge-cat"    id="catBadge">Pattern</span>
+      <span class="badge badge-num"    id="numBadge">#1</span>
+    </div>
+
+    <div class="question-text" id="questionText">Loading…</div>
+    <div class="graphic-area"  id="graphicArea"  style="display:none"></div>
+    <div id="answerArea"></div>
+    <div class="hint-box"      id="hintBox"></div>
+    <div class="feedback-box"  id="feedbackBox"></div>
+    <button class="next-btn"   id="nextBtn" style="display:none">Next puzzle ➜</button>
+
+    <div class="finish-screen" id="finishScreen" style="display:none">
+      <div class="trophy">🏆</div>
+      <h2>Amazing work!</h2>
+      <p id="finishMsg"></p>
+      <button class="restart-btn" onclick="restartQuiz()">🔄 Play again</button>
+    </div>
+  </div>
+
+  <div class="score-strip">
+    <div class="score-item"><div class="score-num" id="scoreCorrect">0</div><div class="score-lbl">Correct ✅</div></div>
+    <div class="score-item"><div class="score-num" id="scoreWrong">0</div><div class="score-lbl">Wrong ❌</div></div>
+    <div class="score-item"><div class="score-num" id="scoreStreak">0</div><div class="score-lbl">Streak 🔥</div></div>
+  </div>
+
+  <div class="stats-footer">👨‍👩 Parent: <a href="stats.html" target="_blank">View Statistics</a></div>
+</div>
+
+<script>
+// ── GLOBALS ───────────────────────────────────────────────────
+let exercises = [];
+let currentIndex = 0, answered = false;
+let correct = 0, wrong = 0, streak = 0;
+
+// ── LOAD — merges exercises.json + exercises_matrices.json ────
+async function loadExercises() {
+  try {
+    const [r1, r2] = await Promise.all([
+      fetch('exercises.json?t=' + Date.now()),
+      fetch('exercises_matrices.json?t=' + Date.now()).catch(() => null)
+    ]);
+    const d1 = await r1.json();
+    let all = [...d1.exercises];
+    if (r2 && r2.ok) {
+      const d2 = await r2.json();
+      all = all.concat(d2.exercises);
+    }
+    exercises = shuffle(all);
+    showQuestion();
+  } catch(e) {
+    document.getElementById('questionText').textContent = '⚠️ Could not load exercises.json';
+    console.error(e);
+  }
+}
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length-1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i+1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// ── SHOW QUESTION ─────────────────────────────────────────────
+function showQuestion() {
+  answered = false;
+  document.getElementById('nextBtn').style.display = 'none';
+  document.getElementById('feedbackBox').className = 'feedback-box';
+  document.getElementById('hintBox').style.display = 'none';
+
+  const q = exercises[currentIndex];
+  if (!q) { showFinish(); return; }
+
+  // progress
+  const pct = Math.round(currentIndex / exercises.length * 100);
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progText').textContent = `Question ${currentIndex+1} of ${exercises.length}`;
+  document.getElementById('progPct').textContent = pct + '%';
+
+  // badges
+  const db = document.getElementById('diffBadge');
+  db.textContent = '⭐'.repeat(q.difficulty) + ' Level ' + q.difficulty;
+  db.className = 'badge badge-diff-' + q.difficulty;
+  document.getElementById('catBadge').textContent = q.category || q.type;
+  document.getElementById('numBadge').textContent = '#' + (currentIndex+1);
+
+  // question text
+  document.getElementById('questionText').textContent = q.questionText;
+
+  // graphic
+  const ga = document.getElementById('graphicArea');
+  if (q.graphic && q.graphic.trim()) {
+    ga.innerHTML = q.graphic;
+    ga.style.display = 'block';
+  } else {
+    ga.innerHTML = '';
+    ga.style.display = 'none';
+  }
+
+  // hint (hidden until wrong)
+  const hb = document.getElementById('hintBox');
+  if (q.hint) { hb.textContent = '💡 Hint: ' + q.hint; }
+
+  // answer area
+  buildAnswerArea(q);
+}
+
+function buildAnswerArea(q) {
+  const area = document.getElementById('answerArea');
+  area.innerHTML = '';
+
+  // ── Raven's matrix choice ──────────────────────────────────
+  if (q.answerType === 'matrix-choice' && q.optionSVGs) {
+    const grid = document.createElement('div');
+    grid.className = 'matrix-options';
+    q.options.forEach((letter, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'matrix-btn';
+      btn.innerHTML = `<span class="lbl">${letter}</span>${q.optionSVGs[i]}`;
+      btn.onclick = () => submitAnswer(letter, btn);
+      grid.appendChild(btn);
+    });
+    area.appendChild(grid);
+    return;
+  }
+
+  // ── Standard multiple choice ───────────────────────────────
+  if (q.answerType === 'multiple-choice' && q.options && q.options.length) {
+    const grid = document.createElement('div');
+    const n = q.options.length;
+    grid.className = 'options-grid ' + (n === 3 ? 'n3' : 'n4');
+    q.options.forEach(opt => {
+      const btn = document.createElement('button');
+      btn.className = 'option-btn';
+      btn.textContent = opt;
+      btn.onclick = () => submitAnswer(opt, btn);
+      grid.appendChild(btn);
+    });
+    area.appendChild(grid);
+    return;
+  }
+
+  // ── Number input ───────────────────────────────────────────
+  const wrap = document.createElement('div');
+  wrap.className = 'number-area';
+  const inp = document.createElement('input');
+  inp.type = 'number'; inp.className = 'number-input';
+  inp.placeholder = '?'; inp.min = 0; inp.id = 'numInput';
+  inp.addEventListener('keydown', e => { if (e.key === 'Enter') doCheck(); });
+  const btn = document.createElement('button');
+  btn.className = 'check-btn'; btn.textContent = '✓ Check my answer';
+  btn.onclick = doCheck;
+  wrap.appendChild(inp); wrap.appendChild(btn);
+  area.appendChild(wrap);
+  setTimeout(() => inp.focus(), 100);
+}
+
+function doCheck() {
+  const inp = document.getElementById('numInput');
+  const val = parseInt(inp.value);
+  if (isNaN(val)) { showFeedback('wrong','🔢 Type a number first!'); return; }
+  submitAnswer(val, null);
+}
+
+// ── SUBMIT ────────────────────────────────────────────────────
+function submitAnswer(userAnswer, clickedBtn) {
+  if (answered) return;
+  answered = true;
+
+  const q = exercises[currentIndex];
+  const isCorrect = String(userAnswer).trim() === String(q.correctAnswer).trim();
+
+  if (isCorrect) {
+    correct++; streak++;
+    showFeedback('correct', '✅ Brilliant! ' + randomPraise());
+  } else {
+    wrong++; streak = 0;
+    showFeedback('wrong', `❌ Not quite! Correct answer: ${q.correctAnswer}`);
+    // show hint if available
+    const hb = document.getElementById('hintBox');
+    if (q.hint) hb.style.display = 'block';
+  }
+
+  // highlight buttons
+  const btnClass = q.answerType === 'matrix-choice' ? '.matrix-btn' : '.option-btn';
+  document.querySelectorAll(btnClass).forEach(b => {
+    b.disabled = true;
+    // get the answer value for this button
+    let bVal = '';
+    if (q.answerType === 'matrix-choice') {
+      bVal = b.querySelector('.lbl').textContent.trim();
+    } else {
+      bVal = b.textContent.trim();
+    }
+    if (bVal === String(q.correctAnswer).trim()) b.classList.add('correct');
+    else if (b === clickedBtn) b.classList.add('wrong');
+  });
+
+  if (q.answerType === 'number-input') {
+    const inp = document.getElementById('numInput');
+    if (inp) inp.disabled = true;
+    document.querySelectorAll('.check-btn').forEach(b => b.disabled = true);
+  }
+
+  updateScore();
+  recordStat(q, userAnswer, isCorrect);
+
+  setTimeout(() => {
+    document.getElementById('nextBtn').style.display = 'block';
+  }, 350);
+}
+
+function showFeedback(type, msg) {
+  const fb = document.getElementById('feedbackBox');
+  fb.textContent = msg;
+  fb.className = 'feedback-box ' + type;
+}
+
+const PRAISES = ['🎉','🌟 You\'re a genius!','🚀 Superstar!','💪 Excellent!','🦁 Roar!','🔥 On fire!'];
+function randomPraise() { return PRAISES[Math.floor(Math.random() * PRAISES.length)]; }
+
+function updateScore() {
+  document.getElementById('scoreCorrect').textContent = correct;
+  document.getElementById('scoreWrong').textContent   = wrong;
+  document.getElementById('scoreStreak').textContent  = streak;
+}
+
+function recordStat(q, userAnswer, isCorrect) {
+  try {
+    const stats = JSON.parse(localStorage.getItem('mensa_stats') || '[]');
+    stats.push({ id:q.id, type:q.type, difficulty:q.difficulty, category:q.category,
+                 userAnswer, correctAnswer:q.correctAnswer, correct:isCorrect,
+                 timestamp:new Date().toISOString() });
+    localStorage.setItem('mensa_stats', JSON.stringify(stats));
+  } catch(e) {}
+}
+
+// ── NEXT ─────────────────────────────────────────────────────
+document.getElementById('nextBtn').addEventListener('click', () => {
+  currentIndex++;
+  if (currentIndex >= exercises.length) { showFinish(); return; }
+  showQuestion();
+});
+
+// ── FINISH ───────────────────────────────────────────────────
+function showFinish() {
+  ['questionText','graphicArea','answerArea','hintBox','feedbackBox','nextBtn']
+    .forEach(id => {
+      const el = document.getElementById(id);
+      if (el) { el.style.display = 'none'; el.innerHTML = ''; }
+    });
+  document.getElementById('finishScreen').style.display = 'block';
+  const total = correct + wrong;
+  const pct = total ? Math.round(correct/total*100) : 0;
+  let msg = `You got ${correct} out of ${total} correct (${pct}%). `;
+  if (pct===100) msg += '🏆 Perfect score! Extraordinary!';
+  else if (pct>=80) msg += '🌟 Wonderful result!';
+  else if (pct>=60) msg += '💪 Great effort! Keep practising!';
+  else msg += '📚 Keep going — you\'re getting better every day!';
+  document.getElementById('finishMsg').textContent = msg;
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progPct').textContent = '100%';
+}
+
+function restartQuiz() {
+  correct=0; wrong=0; streak=0; currentIndex=0;
+  exercises = shuffle(exercises); answered=false;
+  updateScore();
+  ['questionText','graphicArea','answerArea'].forEach(id => {
+    document.getElementById(id).style.display = '';
+  });
+  document.getElementById('finishScreen').style.display = 'none';
+  showQuestion();
+}
+
+// ── START ────────────────────────────────────────────────────
+loadExercises();
+</script>
+</body>
+</html>
