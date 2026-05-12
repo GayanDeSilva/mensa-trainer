@@ -1,0 +1,486 @@
+{
+  "exercises": [
+    {
+      "id": 1,
+      "type": "number-series",
+      "difficulty": 1,
+      "category": "Number Sequences",
+      "questionText": "What number comes next?",
+      "graphic": "<svg width='100%' viewBox='0 0 520 90' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='20' width='70' height='50' rx='12' fill='#dbeafe' stroke='#93c5fd' stroke-width='2'/><text x='45' y='52' font-size='28' text-anchor='middle' dominant-baseline='central'>1</text><rect x='110' y='20' width='70' height='50' rx='12' fill='#dbeafe' stroke='#93c5fd' stroke-width='2'/><text x='145' y='52' font-size='28' text-anchor='middle' dominant-baseline='central'>2</text><rect x='210' y='20' width='70' height='50' rx='12' fill='#dbeafe' stroke='#93c5fd' stroke-width='2'/><text x='245' y='52' font-size='28' text-anchor='middle' dominant-baseline='central'>3</text><rect x='310' y='20' width='70' height='50' rx='12' fill='#dbeafe' stroke='#93c5fd' stroke-width='2'/><text x='345' y='52' font-size='28' text-anchor='middle' dominant-baseline='central'>4</text><rect x='410' y='20' width='70' height='50' rx='12' fill='#fff7ed' stroke='#fb923c' stroke-width='2.5' stroke-dasharray='6 3'/><text x='445' y='52' font-size='28' text-anchor='middle' dominant-baseline='central'>?</text></svg>",
+      "correctAnswer": "5",
+      "options": ["5", "6", "7", "8"],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 2,
+      "type": "number-series",
+      "difficulty": 1,
+      "category": "Number Sequences",
+      "questionText": "What number comes next?",
+      "graphic": "<svg width='100%' viewBox='0 0 520 90' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='20' width='70' height='50' rx='12' fill='#dcfce7' stroke='#86efac' stroke-width='2'/><text x='45' y='52' font-size='28' text-anchor='middle' dominant-baseline='central'>10</text><rect x='110' y='20' width='70' height='50' rx='12' fill='#dcfce7' stroke='#86efac' stroke-width='2'/><text x='145' y='52' font-size='28' text-anchor='middle' dominant-baseline='central'>8</text><rect x='210' y='20' width='70' height='50' rx='12' fill='#dcfce7' stroke='#86efac' stroke-width='2'/><text x='245' y='52' font-size='28' text-anchor='middle' dominant-baseline='central'>6</text><rect x='310' y='20' width='70' height='50' rx='12' fill='#dcfce7' stroke='#86efac' stroke-width='2'/><text x='345' y='52' font-size='28' text-anchor='middle' dominant-baseline='central'>4</text><rect x='410' y='20' width='70' height='50' rx='12' fill='#fff7ed' stroke='#fb923c' stroke-width='2.5' stroke-dasharray='6 3'/><text x='445' y='52' font-size='28' text-anchor='middle' dominant-baseline='central'>?</text></svg>",
+      "correctAnswer": "2",
+      "options": ["2", "3", "1", "0"],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 3,
+      "type": "number-series",
+      "difficulty": 2,
+      "category": "Number Sequences",
+      "questionText": "What number comes next? (count the jumps!)",
+      "graphic": "<svg width='100%' viewBox='0 0 520 90' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='20' width='70' height='50' rx='12' fill='#ede9fe' stroke='#a78bfa' stroke-width='2'/><text x='45' y='52' font-size='28' text-anchor='middle' dominant-baseline='central'>2</text><rect x='110' y='20' width='70' height='50' rx='12' fill='#ede9fe' stroke='#a78bfa' stroke-width='2'/><text x='145' y='52' font-size='28' text-anchor='middle' dominant-baseline='central'>4</text><rect x='210' y='20' width='70' height='50' rx='12' fill='#ede9fe' stroke='#a78bfa' stroke-width='2'/><text x='245' y='52' font-size='28' text-anchor='middle' dominant-baseline='central'>6</text><rect x='310' y='20' width='70' height='50' rx='12' fill='#ede9fe' stroke='#a78bfa' stroke-width='2'/><text x='345' y='52' font-size='28' text-anchor='middle' dominant-baseline='central'>8</text><rect x='410' y='20' width='70' height='50' rx='12' fill='#fff7ed' stroke='#fb923c' stroke-width='2.5' stroke-dasharray='6 3'/><text x='445' y='52' font-size='28' text-anchor='middle' dominant-baseline='central'>?</text></svg>",
+      "correctAnswer": "10",
+      "options": ["9", "10", "12", "11"],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 4,
+      "type": "pattern",
+      "difficulty": 1,
+      "category": "Pattern Recognition",
+      "questionText": "Look at the pattern — what shape comes next in the box?",
+      "graphic": "<svg width='100%' viewBox='0 0 560 110' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='15' width='90' height='80' rx='10' fill='#f3f4f6' stroke='#d1d5db' stroke-width='1.5'/><circle cx='55' cy='55' r='28' fill='#f87171' stroke='#ef4444' stroke-width='2'/><rect x='120' y='15' width='90' height='80' rx='10' fill='#f3f4f6' stroke='#d1d5db' stroke-width='1.5'/><rect x='138' y='33' width='54' height='54' rx='5' fill='#60a5fa' stroke='#3b82f6' stroke-width='2'/><rect x='230' y='15' width='90' height='80' rx='10' fill='#f3f4f6' stroke='#d1d5db' stroke-width='1.5'/><circle cx='275' cy='55' r='28' fill='#f87171' stroke='#ef4444' stroke-width='2'/><rect x='340' y='15' width='90' height='80' rx='10' fill='#f3f4f6' stroke='#d1d5db' stroke-width='1.5'/><rect x='358' y='33' width='54' height='54' rx='5' fill='#60a5fa' stroke='#3b82f6' stroke-width='2'/><rect x='450' y='10' width='100' height='90' rx='12' fill='#fff7ed' stroke='#fb923c' stroke-width='2.5' stroke-dasharray='6 3'/><text x='500' y='58' font-size='36' text-anchor='middle' dominant-baseline='central'>?</text></svg>",
+      "correctAnswer": "A",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><circle cx='40' cy='40' r='26' fill='#f87171' stroke='#ef4444' stroke-width='2'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='14' y='14' width='52' height='52' rx='5' fill='#60a5fa' stroke='#3b82f6' stroke-width='2'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><polygon points='40,12 68,68 12,68' fill='#4ade80' stroke='#22c55e' stroke-width='2'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><polygon points='40,14 66,40 40,66 14,40' fill='#c084fc' stroke='#a855f7' stroke-width='2'/></svg>"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "pattern",
+      "difficulty": 1,
+      "category": "Pattern Recognition",
+      "questionText": "What colour circle comes next?",
+      "graphic": "<svg width='100%' viewBox='0 0 520 90' xmlns='http://www.w3.org/2000/svg'><circle cx='50' cy='45' r='28' fill='#facc15' stroke='#eab308' stroke-width='2'/><circle cx='130' cy='45' r='28' fill='#4ade80' stroke='#22c55e' stroke-width='2'/><circle cx='210' cy='45' r='28' fill='#facc15' stroke='#eab308' stroke-width='2'/><circle cx='290' cy='45' r='28' fill='#4ade80' stroke='#22c55e' stroke-width='2'/><circle cx='370' cy='45' r='28' fill='#facc15' stroke='#eab308' stroke-width='2'/><rect x='420' y='10' width='70' height='70' rx='12' fill='#fff7ed' stroke='#fb923c' stroke-width='2.5' stroke-dasharray='6 3'/><text x='455' y='52' font-size='28' text-anchor='middle' dominant-baseline='central'>?</text></svg>",
+      "correctAnswer": "A",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><circle cx='40' cy='40' r='26' fill='#4ade80' stroke='#22c55e' stroke-width='2'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><circle cx='40' cy='40' r='26' fill='#facc15' stroke='#eab308' stroke-width='2'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><circle cx='40' cy='40' r='26' fill='#f87171' stroke='#ef4444' stroke-width='2'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><circle cx='40' cy='40' r='26' fill='#60a5fa' stroke='#3b82f6' stroke-width='2'/></svg>"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "pattern",
+      "difficulty": 2,
+      "category": "Pattern Recognition",
+      "questionText": "The circles grow then shrink. What size comes next?",
+      "graphic": "<svg width='100%' viewBox='0 0 520 110' xmlns='http://www.w3.org/2000/svg'><circle cx='40' cy='55' r='14' fill='#818cf8' stroke='#6366f1' stroke-width='2'/><circle cx='110' cy='55' r='22' fill='#818cf8' stroke='#6366f1' stroke-width='2'/><circle cx='195' cy='55' r='30' fill='#818cf8' stroke='#6366f1' stroke-width='2'/><circle cx='290' cy='55' r='22' fill='#818cf8' stroke='#6366f1' stroke-width='2'/><circle cx='370' cy='55' r='14' fill='#818cf8' stroke='#6366f1' stroke-width='2'/><rect x='420' y='10' width='80' height='80' rx='12' fill='#fff7ed' stroke='#fb923c' stroke-width='2.5' stroke-dasharray='6 3'/><text x='460' y='57' font-size='28' text-anchor='middle' dominant-baseline='central'>?</text></svg>",
+      "correctAnswer": "B",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><circle cx='40' cy='40' r='30' fill='#818cf8' stroke='#6366f1' stroke-width='2'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><circle cx='40' cy='40' r='22' fill='#818cf8' stroke='#6366f1' stroke-width='2'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><circle cx='40' cy='40' r='12' fill='#818cf8' stroke='#6366f1' stroke-width='2'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='10' y='10' width='60' height='60' rx='5' fill='#818cf8' stroke='#6366f1' stroke-width='2'/></svg>"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "matrix",
+      "difficulty": 2,
+      "category": "Matrix Reasoning",
+      "questionText": "Each row has a circle, square and triangle. What goes in the box?",
+      "graphic": "<svg width='100%' viewBox='0 0 280 280' xmlns='http://www.w3.org/2000/svg'><rect width='280' height='280' rx='12' fill='#f1f5f9' stroke='#cbd5e1' stroke-width='2'/><line x1='93' y1='4' x2='93' y2='276' stroke='#cbd5e1' stroke-width='1.5'/><line x1='186' y1='4' x2='186' y2='276' stroke='#cbd5e1' stroke-width='1.5'/><line x1='4' y1='93' x2='276' y2='93' stroke='#cbd5e1' stroke-width='1.5'/><line x1='4' y1='186' x2='276' y2='186' stroke='#cbd5e1' stroke-width='1.5'/><circle cx='46' cy='46' r='28' fill='#f87171' stroke='#ef4444' stroke-width='2'/><rect x='111' y='18' width='56' height='56' rx='5' fill='#f87171' stroke='#ef4444' stroke-width='2'/><polygon points='233,18 261,74 205,74' fill='#f87171' stroke='#ef4444' stroke-width='2'/><rect x='18' y='111' width='56' height='56' rx='5' fill='#60a5fa' stroke='#3b82f6' stroke-width='2'/><polygon points='140,111 168,167 112,167' fill='#60a5fa' stroke='#3b82f6' stroke-width='2'/><circle cx='233' cy='139' r='28' fill='#60a5fa' stroke='#3b82f6' stroke-width='2'/><polygon points='46,204 74,260 18,260' fill='#4ade80' stroke='#22c55e' stroke-width='2'/><circle cx='139' cy='232' r='28' fill='#4ade80' stroke='#22c55e' stroke-width='2'/><rect x='200' y='200' width='70' height='70' rx='0' fill='#fff7ed'/><rect x='200' y='200' width='70' height='70' fill='none' stroke='#fb923c' stroke-width='3' stroke-dasharray='8 4'/><text x='235' y='238' font-size='32' text-anchor='middle' dominant-baseline='central' fill='#fb923c'>?</text></svg>",
+      "correctAnswer": "C",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><circle cx='40' cy='40' r='26' fill='#4ade80' stroke='#22c55e' stroke-width='2'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='14' y='14' width='52' height='52' rx='5' fill='#4ade80' stroke='#22c55e' stroke-width='2'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='14' y='14' width='52' height='52' rx='5' fill='#4ade80' stroke='#22c55e' stroke-width='2'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><polygon points='40,12 68,68 12,68' fill='#f87171' stroke='#ef4444' stroke-width='2'/></svg>"
+      ],
+      "note": "Answer B and C both show green square — correct is B (green square)"
+    },
+    {
+      "id": 8,
+      "type": "matrix",
+      "difficulty": 2,
+      "category": "Matrix Reasoning",
+      "questionText": "Each row has one more shape than the last. How many shapes go in the box?",
+      "graphic": "<svg width='100%' viewBox='0 0 280 180' xmlns='http://www.w3.org/2000/svg'><rect width='280' height='180' rx='12' fill='#f1f5f9' stroke='#cbd5e1' stroke-width='2'/><line x1='93' y1='4' x2='93' y2='176' stroke='#cbd5e1' stroke-width='1.5'/><line x1='186' y1='4' x2='186' y2='176' stroke='#cbd5e1' stroke-width='1.5'/><line x1='4' y1='90' x2='276' y2='90' stroke='#cbd5e1' stroke-width='1.5'/><circle cx='46' cy='45' r='20' fill='#facc15' stroke='#eab308' stroke-width='2'/><circle cx='120' cy='45' r='18' fill='#facc15' stroke='#eab308' stroke-width='2'/><circle cx='155' cy='45' r='18' fill='#facc15' stroke='#eab308' stroke-width='2'/><circle cx='204' cy='45' r='16' fill='#facc15' stroke='#eab308' stroke-width='2'/><circle cx='233' cy='45' r='16' fill='#facc15' stroke='#eab308' stroke-width='2'/><circle cx='262' cy='45' r='16' fill='#facc15' stroke='#eab308' stroke-width='2'/><rect x='10' y='100' width='66' height='66' rx='5' fill='#ec4899' stroke='#db2777' stroke-width='2'/><rect x='100' y='106' width='50' height='50' rx='4' fill='#ec4899' stroke='#db2777' stroke-width='2'/><rect x='156' y='106' width='50' height='50' rx='4' fill='#ec4899' stroke='#db2777' stroke-width='2'/><rect x='196' y='100' width='70' height='70' rx='0' fill='#fff7ed'/><rect x='196' y='100' width='70' height='70' fill='none' stroke='#fb923c' stroke-width='3' stroke-dasharray='8 4'/><text x='231' y='138' font-size='32' text-anchor='middle' dominant-baseline='central' fill='#fb923c'>?</text></svg>",
+      "correctAnswer": "C",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='27' y='27' width='26' height='26' rx='3' fill='#ec4899' stroke='#db2777' stroke-width='1.5'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='10' y='27' width='26' height='26' rx='3' fill='#ec4899' stroke='#db2777' stroke-width='1.5'/><rect x='44' y='27' width='26' height='26' rx='3' fill='#ec4899' stroke='#db2777' stroke-width='1.5'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='6' y='27' width='20' height='20' rx='3' fill='#ec4899' stroke='#db2777' stroke-width='1.5'/><rect x='30' y='27' width='20' height='20' rx='3' fill='#ec4899' stroke='#db2777' stroke-width='1.5'/><rect x='54' y='27' width='20' height='20' rx='3' fill='#ec4899' stroke='#db2777' stroke-width='1.5'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='4' y='27' width='16' height='16' rx='2' fill='#ec4899' stroke='#db2777' stroke-width='1'/><rect x='22' y='27' width='16' height='16' rx='2' fill='#ec4899' stroke='#db2777' stroke-width='1'/><rect x='40' y='27' width='16' height='16' rx='2' fill='#ec4899' stroke='#db2777' stroke-width='1'/><rect x='58' y='27' width='16' height='16' rx='2' fill='#ec4899' stroke='#db2777' stroke-width='1'/></svg>"
+      ]
+    },
+    {
+      "id": 9,
+      "type": "matrix",
+      "difficulty": 3,
+      "category": "Matrix Reasoning",
+      "questionText": "Each row: shapes get darker. Each column: different shape. What goes here?",
+      "graphic": "<svg width='100%' viewBox='0 0 280 280' xmlns='http://www.w3.org/2000/svg'><rect width='280' height='280' rx='12' fill='#f1f5f9' stroke='#cbd5e1' stroke-width='2'/><line x1='93' y1='4' x2='93' y2='276' stroke='#cbd5e1' stroke-width='1.5'/><line x1='186' y1='4' x2='186' y2='276' stroke='#cbd5e1' stroke-width='1.5'/><line x1='4' y1='93' x2='276' y2='93' stroke='#cbd5e1' stroke-width='1.5'/><line x1='4' y1='186' x2='276' y2='186' stroke='#cbd5e1' stroke-width='1.5'/><circle cx='46' cy='46' r='28' fill='white' stroke='#374151' stroke-width='2.5'/><circle cx='139' cy='46' r='28' fill='#9ca3af' stroke='#374151' stroke-width='2'/><circle cx='232' cy='46' r='28' fill='#111827' stroke='#111827' stroke-width='2'/><rect x='18' y='111' width='56' height='56' rx='4' fill='white' stroke='#374151' stroke-width='2.5'/><rect x='111' y='111' width='56' height='56' rx='4' fill='#9ca3af' stroke='#374151' stroke-width='2'/><rect x='204' y='111' width='56' height='56' rx='4' fill='#111827' stroke='#111827' stroke-width='2'/><polygon points='46,204 74,260 18,260' fill='white' stroke='#374151' stroke-width='2.5'/><polygon points='139,204 167,260 111,260' fill='#9ca3af' stroke='#374151' stroke-width='2'/><rect x='200' y='200' width='70' height='70' rx='0' fill='#fff7ed'/><rect x='200' y='200' width='70' height='70' fill='none' stroke='#fb923c' stroke-width='3' stroke-dasharray='8 4'/><text x='235' y='238' font-size='32' text-anchor='middle' dominant-baseline='central' fill='#fb923c'>?</text></svg>",
+      "correctAnswer": "B",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><polygon points='40,10 68,70 12,70' fill='white' stroke='#374151' stroke-width='2.5'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><polygon points='40,10 68,70 12,70' fill='#111827' stroke='#111827' stroke-width='2'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><polygon points='40,10 68,70 12,70' fill='#9ca3af' stroke='#374151' stroke-width='2'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='14' y='14' width='52' height='52' rx='4' fill='#111827' stroke='#111827' stroke-width='2'/></svg>"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "spatial",
+      "difficulty": 2,
+      "category": "Spatial Reasoning",
+      "questionText": "How many cubes are in this stack? Count carefully!",
+      "graphic": "<svg width='100%' viewBox='0 0 300 260' xmlns='http://www.w3.org/2000/svg'><g transform='translate(80,180)'><polygon points='0,0 50,-25 100,0 50,25' fill='#93c5fd' stroke='#3b82f6' stroke-width='1.5'/><polygon points='0,0 0,-50 50,-75 50,-25' fill='#dbeafe' stroke='#3b82f6' stroke-width='1.5'/><polygon points='100,0 100,-50 50,-75 50,-25' fill='#bfdbfe' stroke='#3b82f6' stroke-width='1.5'/></g><g transform='translate(130,155)'><polygon points='0,0 50,-25 100,0 50,25' fill='#93c5fd' stroke='#3b82f6' stroke-width='1.5'/><polygon points='0,0 0,-50 50,-75 50,-25' fill='#dbeafe' stroke='#3b82f6' stroke-width='1.5'/><polygon points='100,0 100,-50 50,-75 50,-25' fill='#bfdbfe' stroke='#3b82f6' stroke-width='1.5'/></g><g transform='translate(80,130)'><polygon points='0,0 50,-25 100,0 50,25' fill='#93c5fd' stroke='#3b82f6' stroke-width='1.5'/><polygon points='0,0 0,-50 50,-75 50,-25' fill='#dbeafe' stroke='#3b82f6' stroke-width='1.5'/><polygon points='100,0 100,-50 50,-75 50,-25' fill='#bfdbfe' stroke='#3b82f6' stroke-width='1.5'/></g><g transform='translate(80,80)'><polygon points='0,0 50,-25 100,0 50,25' fill='#93c5fd' stroke='#3b82f6' stroke-width='1.5'/><polygon points='0,0 0,-50 50,-75 50,-25' fill='#dbeafe' stroke='#3b82f6' stroke-width='1.5'/><polygon points='100,0 100,-50 50,-75 50,-25' fill='#bfdbfe' stroke='#3b82f6' stroke-width='1.5'/></g></svg>",
+      "correctAnswer": "4",
+      "options": ["3", "4", "5", "6"],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 12,
+      "type": "spatial",
+      "difficulty": 3,
+      "category": "Spatial Reasoning",
+      "questionText": "Turn the shape to the right ↻ — which answer matches?",
+      "graphic": "<svg width='100%' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><rect x='30' y='20' width='140' height='160' rx='12' fill='#f3f4f6' stroke='#d1d5db' stroke-width='2'/><rect x='46' y='36' width='44' height='44' rx='5' fill='#6366f1'/><circle cx='142' cy='58' r='22' fill='#f59e0b'/><rect x='46' y='116' width='108' height='22' rx='5' fill='#10b981'/><text x='100' y='192' font-size='13' fill='#9ca3af' text-anchor='middle'>↻ Rotate right</text></svg>",
+      "correctAnswer": "B",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 90 110' xmlns='http://www.w3.org/2000/svg'><rect width='90' height='110' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='8' y='8' width='74' height='34' rx='5' fill='#6366f1'/><circle cx='45' cy='72' r='18' fill='#f59e0b'/><rect x='60' y='56' width='22' height='46' rx='5' fill='#10b981'/></svg>",
+        "<svg viewBox='0 0 90 110' xmlns='http://www.w3.org/2000/svg'><rect width='90' height='110' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='8' y='68' width='74' height='34' rx='5' fill='#6366f1'/><circle cx='45' cy='38' r='18' fill='#f59e0b'/><rect x='8' y='8' width='22' height='56' rx='5' fill='#10b981'/></svg>",
+        "<svg viewBox='0 0 90 110' xmlns='http://www.w3.org/2000/svg'><rect width='90' height='110' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='8' y='8' width='74' height='34' rx='5' fill='#f59e0b'/><circle cx='45' cy='72' r='18' fill='#6366f1'/><rect x='8' y='56' width='22' height='46' rx='5' fill='#10b981'/></svg>",
+        "<svg viewBox='0 0 90 110' xmlns='http://www.w3.org/2000/svg'><rect width='90' height='110' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='8' y='8' width='74' height='34' rx='5' fill='#6366f1'/><circle cx='22' cy='72' r='18' fill='#f59e0b'/><rect x='60' y='56' width='22' height='46' rx='5' fill='#10b981'/></svg>"
+      ]
+    },
+    {
+      "id": 13,
+      "type": "analogy",
+      "difficulty": 2,
+      "category": "Visual Analogies",
+      "questionText": "A pencil makes writing. A paintbrush makes a …?",
+      "graphic": "<svg width='100%' viewBox='0 0 420 110' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='15' width='80' height='80' rx='12' fill='#fef9c3' stroke='#fde047' stroke-width='2'/><text x='50' y='62' font-size='44' text-anchor='middle' dominant-baseline='central'>✏️</text><text x='108' y='62' font-size='24' text-anchor='middle' dominant-baseline='central' fill='#9ca3af'>→</text><rect x='125' y='15' width='80' height='80' rx='12' fill='#fef9c3' stroke='#fde047' stroke-width='2'/><text x='165' y='62' font-size='44' text-anchor='middle' dominant-baseline='central'>📝</text><text x='235' y='62' font-size='20' text-anchor='middle' dominant-baseline='central' fill='#374151' font-weight='700'>as</text><rect x='260' y='15' width='80' height='80' rx='12' fill='#dcfce7' stroke='#86efac' stroke-width='2'/><text x='300' y='62' font-size='44' text-anchor='middle' dominant-baseline='central'>🖌️</text><text x='358' y='62' font-size='24' text-anchor='middle' dominant-baseline='central' fill='#9ca3af'>→</text><rect x='375' y='10' width='36' height='90' rx='12' fill='#fff7ed' stroke='#fb923c' stroke-width='2.5' stroke-dasharray='6 3'/><text x='393' y='62' font-size='22' text-anchor='middle' dominant-baseline='central'>?</text></svg>",
+      "correctAnswer": "A",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='42' text-anchor='middle' dominant-baseline='central'>🖼️</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='42' text-anchor='middle' dominant-baseline='central'>🪣</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='42' text-anchor='middle' dominant-baseline='central'>✂️</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='42' text-anchor='middle' dominant-baseline='central'>📚</text></svg>"
+      ]
+    },
+    {
+      "id": 14,
+      "type": "analogy",
+      "difficulty": 2,
+      "category": "Visual Analogies",
+      "questionText": "A baby chick comes from an egg. What does a caterpillar become?",
+      "graphic": "<svg width='100%' viewBox='0 0 420 110' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='15' width='80' height='80' rx='12' fill='#fef9c3' stroke='#fde047' stroke-width='2'/><text x='50' y='62' font-size='44' text-anchor='middle' dominant-baseline='central'>🥚</text><text x='108' y='62' font-size='24' text-anchor='middle' dominant-baseline='central' fill='#9ca3af'>→</text><rect x='125' y='15' width='80' height='80' rx='12' fill='#fef9c3' stroke='#fde047' stroke-width='2'/><text x='165' y='62' font-size='44' text-anchor='middle' dominant-baseline='central'>🐣</text><text x='235' y='62' font-size='20' text-anchor='middle' dominant-baseline='central' fill='#374151' font-weight='700'>as</text><rect x='260' y='15' width='80' height='80' rx='12' fill='#dcfce7' stroke='#86efac' stroke-width='2'/><text x='300' y='62' font-size='44' text-anchor='middle' dominant-baseline='central'>🐛</text><text x='358' y='62' font-size='24' text-anchor='middle' dominant-baseline='central' fill='#9ca3af'>→</text><rect x='375' y='10' width='36' height='90' rx='12' fill='#fff7ed' stroke='#fb923c' stroke-width='2.5' stroke-dasharray='6 3'/><text x='393' y='62' font-size='22' text-anchor='middle' dominant-baseline='central'>?</text></svg>",
+      "correctAnswer": "B",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='42' text-anchor='middle' dominant-baseline='central'>🐛</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='42' text-anchor='middle' dominant-baseline='central'>🦋</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='42' text-anchor='middle' dominant-baseline='central'>🐸</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='42' text-anchor='middle' dominant-baseline='central'>🐝</text></svg>"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "analogy",
+      "difficulty": 2,
+      "category": "Visual Analogies",
+      "questionText": "A seed grows into a tree. A baby grows into a …?",
+      "graphic": "<svg width='100%' viewBox='0 0 420 110' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='15' width='80' height='80' rx='12' fill='#fef9c3' stroke='#fde047' stroke-width='2'/><text x='50' y='62' font-size='44' text-anchor='middle' dominant-baseline='central'>🌱</text><text x='108' y='62' font-size='24' text-anchor='middle' dominant-baseline='central' fill='#9ca3af'>→</text><rect x='125' y='15' width='80' height='80' rx='12' fill='#fef9c3' stroke='#fde047' stroke-width='2'/><text x='165' y='62' font-size='44' text-anchor='middle' dominant-baseline='central'>🌳</text><text x='235' y='62' font-size='20' text-anchor='middle' dominant-baseline='central' fill='#374151' font-weight='700'>as</text><rect x='260' y='15' width='80' height='80' rx='12' fill='#dcfce7' stroke='#86efac' stroke-width='2'/><text x='300' y='62' font-size='44' text-anchor='middle' dominant-baseline='central'>👶</text><text x='358' y='62' font-size='24' text-anchor='middle' dominant-baseline='central' fill='#9ca3af'>→</text><rect x='375' y='10' width='36' height='90' rx='12' fill='#fff7ed' stroke='#fb923c' stroke-width='2.5' stroke-dasharray='6 3'/><text x='393' y='62' font-size='22' text-anchor='middle' dominant-baseline='central'>?</text></svg>",
+      "correctAnswer": "A",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='42' text-anchor='middle' dominant-baseline='central'>🧒</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='42' text-anchor='middle' dominant-baseline='central'>🍼</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='42' text-anchor='middle' dominant-baseline='central'>🛏️</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='42' text-anchor='middle' dominant-baseline='central'>🌱</text></svg>"
+      ]
+    },
+    {
+      "id": 16,
+      "type": "analogy",
+      "difficulty": 3,
+      "category": "Visual Analogies",
+      "questionText": "The sun gives us light ☀️. Rain gives us …?",
+      "correctAnswer": "A",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='42' text-anchor='middle' dominant-baseline='central'>💧</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='42' text-anchor='middle' dominant-baseline='central'>❄️</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='42' text-anchor='middle' dominant-baseline='central'>🌈</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='42' text-anchor='middle' dominant-baseline='central'>💨</text></svg>"
+      ]
+    },
+    {
+      "id": 17,
+      "type": "odd-one-out",
+      "difficulty": 1,
+      "category": "Classification",
+      "questionText": "Three are animals. Which one does NOT belong?",
+      "graphic": "<svg width='100%' viewBox='0 0 480 110' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='15' width='100' height='80' rx='12' fill='#dcfce7' stroke='#86efac' stroke-width='2'/><text x='60' y='62' font-size='50' text-anchor='middle' dominant-baseline='central'>🐶</text><rect x='125' y='15' width='100' height='80' rx='12' fill='#dcfce7' stroke='#86efac' stroke-width='2'/><text x='175' y='62' font-size='50' text-anchor='middle' dominant-baseline='central'>🐱</text><rect x='240' y='15' width='100' height='80' rx='12' fill='#dcfce7' stroke='#86efac' stroke-width='2'/><text x='290' y='62' font-size='50' text-anchor='middle' dominant-baseline='central'>🐭</text><rect x='355' y='15' width='100' height='80' rx='12' fill='#fef9c3' stroke='#fde047' stroke-width='2'/><text x='405' y='62' font-size='50' text-anchor='middle' dominant-baseline='central'>🚗</text></svg>",
+      "correctAnswer": "D",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🐶</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🐱</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🐭</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🚗</text></svg>"
+      ]
+    },
+    {
+      "id": 18,
+      "type": "odd-one-out",
+      "difficulty": 2,
+      "category": "Classification",
+      "questionText": "Three are in the sky. Which one does NOT belong?",
+      "graphic": "<svg width='100%' viewBox='0 0 480 110' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='15' width='100' height='80' rx='12' fill='#dbeafe' stroke='#93c5fd' stroke-width='2'/><text x='60' y='62' font-size='50' text-anchor='middle' dominant-baseline='central'>☀️</text><rect x='125' y='15' width='100' height='80' rx='12' fill='#dbeafe' stroke='#93c5fd' stroke-width='2'/><text x='175' y='62' font-size='50' text-anchor='middle' dominant-baseline='central'>🌙</text><rect x='240' y='15' width='100' height='80' rx='12' fill='#dbeafe' stroke='#93c5fd' stroke-width='2'/><text x='290' y='62' font-size='50' text-anchor='middle' dominant-baseline='central'>⭐</text><rect x='355' y='15' width='100' height='80' rx='12' fill='#fef9c3' stroke='#fde047' stroke-width='2'/><text x='405' y='62' font-size='50' text-anchor='middle' dominant-baseline='central'>🧦</text></svg>",
+      "correctAnswer": "D",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>☀️</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🌙</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>⭐</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🧦</text></svg>"
+      ]
+    },
+    {
+      "id": 19,
+      "type": "odd-one-out",
+      "difficulty": 2,
+      "category": "Classification",
+      "questionText": "Three are the same shape. Which one is different?",
+      "graphic": "<svg width='100%' viewBox='0 0 480 110' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='15' width='100' height='80' rx='12' fill='#f3f4f6' stroke='#d1d5db' stroke-width='2'/><circle cx='60' cy='55' r='28' fill='#6366f1'/><rect x='125' y='15' width='100' height='80' rx='12' fill='#f3f4f6' stroke='#d1d5db' stroke-width='2'/><circle cx='175' cy='55' r='28' fill='#8b5cf6'/><rect x='240' y='15' width='100' height='80' rx='12' fill='#fffbeb' stroke='#fcd34d' stroke-width='2.5'/><rect x='261' y='30' width='58' height='50' rx='5' fill='#a78bfa'/><rect x='355' y='15' width='100' height='80' rx='12' fill='#f3f4f6' stroke='#d1d5db' stroke-width='2'/><circle cx='405' cy='55' r='28' fill='#c4b5fd'/></svg>",
+      "correctAnswer": "C",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><circle cx='40' cy='40' r='26' fill='#6366f1'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><circle cx='40' cy='40' r='26' fill='#8b5cf6'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='14' y='14' width='52' height='52' rx='5' fill='#a78bfa'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><circle cx='40' cy='40' r='26' fill='#c4b5fd'/></svg>"
+      ]
+    },
+    {
+      "id": 20,
+      "type": "odd-one-out",
+      "difficulty": 3,
+      "category": "Classification",
+      "questionText": "Three live in water. Which one does NOT live in water?",
+      "graphic": "<svg width='100%' viewBox='0 0 480 110' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='15' width='100' height='80' rx='12' fill='#dcfce7' stroke='#86efac' stroke-width='2'/><text x='60' y='62' font-size='50' text-anchor='middle' dominant-baseline='central'>🐟</text><rect x='125' y='15' width='100' height='80' rx='12' fill='#dcfce7' stroke='#86efac' stroke-width='2'/><text x='175' y='62' font-size='50' text-anchor='middle' dominant-baseline='central'>🦈</text><rect x='240' y='15' width='100' height='80' rx='12' fill='#dcfce7' stroke='#86efac' stroke-width='2'/><text x='290' y='62' font-size='50' text-anchor='middle' dominant-baseline='central'>🐊</text><rect x='355' y='15' width='100' height='80' rx='12' fill='#fef9c3' stroke='#fde047' stroke-width='2'/><text x='405' y='62' font-size='50' text-anchor='middle' dominant-baseline='central'>🦁</text></svg>",
+      "correctAnswer": "D",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🐟</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🦈</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🐊</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🦁</text></svg>"
+      ]
+    },
+    {
+      "id": 21,
+      "type": "figure-completion",
+      "difficulty": 2,
+      "category": "Figure Completion",
+      "questionText": "A piece is missing from the picture! Which piece fits?",
+      "graphic": "<svg width='100%' viewBox='0 0 280 280' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='10' width='260' height='260' rx='16' fill='#ede9fe' stroke='#a78bfa' stroke-width='2'/><circle cx='140' cy='140' r='80' fill='#8b5cf6'/><rect x='120' y='120' width='40' height='40' rx='6' fill='#c4b5fd'/><rect x='160' y='10' width='110' height='110' rx='0' fill='white'/><rect x='160' y='10' width='110' height='110' fill='none' stroke='#fb923c' stroke-width='3' stroke-dasharray='8 4'/><text x='215' y='68' font-size='36' text-anchor='middle' dominant-baseline='central' fill='#fb923c'>?</text></svg>",
+      "correctAnswer": "A",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect width='80' height='80' rx='10' fill='#ede9fe'/><clipPath id='cp1'><rect width='80' height='80' rx='10'/></clipPath><circle cx='0' cy='80' r='70' fill='#8b5cf6' clip-path='url(#cp1)'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#8b5cf6'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><polygon points='40,10 70,70 10,70' fill='#4ade80' stroke='#22c55e' stroke-width='2'/></svg>"
+      ]
+    },
+    {
+      "id": 22,
+      "type": "figure-completion",
+      "difficulty": 3,
+      "category": "Figure Completion",
+      "questionText": "The face has a missing piece! Which piece fits?",
+      "graphic": "<svg width='100%' viewBox='0 0 280 280' xmlns='http://www.w3.org/2000/svg'><circle cx='140' cy='150' r='118' fill='#fef9c3' stroke='#fde047' stroke-width='3'/><circle cx='100' cy='130' r='18' fill='#1e293b'/><circle cx='180' cy='130' r='18' fill='#1e293b'/><path d='M90,190 Q140,230 190,190' fill='none' stroke='#1e293b' stroke-width='6' stroke-linecap='round'/><rect x='90' y='32' width='100' height='80' rx='0' fill='white'/><rect x='90' y='32' width='100' height='80' fill='none' stroke='#fb923c' stroke-width='3' stroke-dasharray='8 4'/><text x='140' y='76' font-size='28' text-anchor='middle' dominant-baseline='central' fill='#fb923c'>?</text></svg>",
+      "correctAnswer": "A",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><clipPath id='cp2'><rect width='80' height='80' rx='10'/></clipPath><circle cx='40' cy='96' r='70' fill='#fef9c3' stroke='#fde047' stroke-width='3' clip-path='url(#cp2)'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><clipPath id='cp3'><rect width='80' height='80' rx='10'/></clipPath><circle cx='40' cy='96' r='70' fill='#fef9c3' stroke='#fde047' stroke-width='3' clip-path='url(#cp3)'/><circle cx='40' cy='60' r='10' fill='#1e293b'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#60a5fa'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='10' y='30' width='60' height='20' rx='5' fill='#f87171'/></svg>"
+      ]
+    },
+    {
+      "id": 23,
+      "type": "counting",
+      "difficulty": 1,
+      "category": "Counting",
+      "questionText": "Count the stars — how many are there?",
+      "graphic": "<svg width='100%' viewBox='0 0 420 90' xmlns='http://www.w3.org/2000/svg'><text x='30' y='55' font-size='52'>🌟</text><text x='100' y='55' font-size='52'>🌟</text><text x='170' y='55' font-size='52'>🌟</text><text x='240' y='55' font-size='52'>🌟</text><text x='310' y='55' font-size='52'>🌟</text><text x='365' y='55' font-size='52'>🌟</text></svg>",
+      "correctAnswer": 6,
+      "options": [],
+      "answerType": "number-input"
+    },
+    {
+      "id": 24,
+      "type": "counting",
+      "difficulty": 2,
+      "category": "Counting",
+      "questionText": "Count only the RED shapes — how many?",
+      "graphic": "<svg width='100%' viewBox='0 0 480 120' xmlns='http://www.w3.org/2000/svg'><circle cx='50' cy='60' r='28' fill='#ef4444'/><rect x='100' y='32' width='56' height='56' rx='6' fill='#3b82f6'/><circle cx='200' cy='60' r='28' fill='#ef4444'/><polygon points='260,32 290,88 230,88' fill='#22c55e'/><circle cx='330' cy='60' r='28' fill='#ef4444'/><rect x='375' y='32' width='56' height='56' rx='6' fill='#ef4444'/></svg>",
+      "correctAnswer": 4,
+      "options": [],
+      "answerType": "number-input"
+    },
+    {
+      "id": 25,
+      "type": "counting",
+      "difficulty": 2,
+      "category": "Counting",
+      "questionText": "How many triangles can you find? (Look carefully — big and small!)",
+      "graphic": "<svg width='100%' viewBox='0 0 360 300' xmlns='http://www.w3.org/2000/svg'><polygon points='180,20 340,280 20,280' fill='#bfdbfe' stroke='#3b82f6' stroke-width='3'/><polygon points='180,20 260,150 100,150' fill='#93c5fd' stroke='#3b82f6' stroke-width='2'/><polygon points='100,150 260,150 180,280' fill='#60a5fa' stroke='#3b82f6' stroke-width='2'/><polygon points='20,280 100,150 180,280' fill='#93c5fd' stroke='#3b82f6' stroke-width='2'/><polygon points='260,150 340,280 180,280' fill='#93c5fd' stroke='#3b82f6' stroke-width='2'/></svg>",
+      "correctAnswer": 5,
+      "options": [],
+      "answerType": "number-input"
+    },
+    {
+      "id": 26,
+      "type": "memory",
+      "difficulty": 2,
+      "category": "Memory",
+      "questionText": "Look carefully — how many YELLOW circles are there?",
+      "graphic": "<svg width='100%' viewBox='0 0 480 120' xmlns='http://www.w3.org/2000/svg'><circle cx='50' cy='60' r='25' fill='#facc15' stroke='#eab308' stroke-width='2'/><circle cx='120' cy='60' r='25' fill='#ef4444' stroke='#dc2626' stroke-width='2'/><circle cx='190' cy='60' r='25' fill='#facc15' stroke='#eab308' stroke-width='2'/><circle cx='260' cy='60' r='25' fill='#3b82f6' stroke='#2563eb' stroke-width='2'/><circle cx='330' cy='60' r='25' fill='#facc15' stroke='#eab308' stroke-width='2'/><circle cx='400' cy='60' r='25' fill='#22c55e' stroke='#16a34a' stroke-width='2'/></svg>",
+      "correctAnswer": 3,
+      "options": [],
+      "answerType": "number-input"
+    },
+    {
+      "id": 27,
+      "type": "what-belongs",
+      "difficulty": 2,
+      "category": "Classification",
+      "questionText": "Which animal lives in the SKY and can fly?",
+      "correctAnswer": "A",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🦅</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🐠</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🦎</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🐢</text></svg>"
+      ]
+    },
+    {
+      "id": 28,
+      "type": "what-belongs",
+      "difficulty": 3,
+      "category": "Classification",
+      "questionText": "Three things are alive and grow. Which one is NOT alive?",
+      "correctAnswer": "C",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🌸</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🍄</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🪨</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🌿</text></svg>"
+      ]
+    },
+    {
+      "id": 29,
+      "type": "creative-thinking",
+      "difficulty": 3,
+      "category": "Logical Thinking",
+      "questionText": "Every cat has 4 legs. Whiskers is a cat. Point to how many legs Whiskers has.",
+      "correctAnswer": "4",
+      "options": ["2", "4", "6", "8"],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 30,
+      "type": "creative-thinking",
+      "difficulty": 3,
+      "category": "Logical Thinking",
+      "questionText": "Mia has MORE stickers than Tom. Tom has MORE stickers than Leo. Who has the MOST? Point to them!",
+      "correctAnswer": "A",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='32' font-size='30' text-anchor='middle' dominant-baseline='central'>👧</text><text x='40' y='62' font-size='13' text-anchor='middle' dominant-baseline='central' fill='#374151' font-weight='700'>Mia</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='32' font-size='30' text-anchor='middle' dominant-baseline='central'>👦</text><text x='40' y='62' font-size='13' text-anchor='middle' dominant-baseline='central' fill='#374151' font-weight='700'>Tom</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='32' font-size='30' text-anchor='middle' dominant-baseline='central'>👦</text><text x='40' y='62' font-size='13' text-anchor='middle' dominant-baseline='central' fill='#374151' font-weight='700'>Leo</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='40' font-size='13' text-anchor='middle' dominant-baseline='central' fill='#9ca3af'>Same</text></svg>"
+      ]
+    },
+    {
+      "id": 31,
+      "type": "creative-thinking",
+      "difficulty": 3,
+      "category": "Logical Thinking",
+      "questionText": "Every time it rains, Lily uses her umbrella ☔. Today Lily has her umbrella. What is the weather like?",
+      "correctAnswer": "A",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🌧️</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>☀️</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>❄️</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><text x='40' y='44' font-size='44' text-anchor='middle' dominant-baseline='central'>🌈</text></svg>"
+      ]
+    },
+    {
+      "id": 32,
+      "type": "number-series",
+      "difficulty": 3,
+      "category": "Number Sequences",
+      "questionText": "The jumps get bigger each time. What number comes next?",
+      "graphic": "<svg width='100%' viewBox='0 0 600 100' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='22' width='80' height='56' rx='12' fill='#fce7f3' stroke='#f9a8d4' stroke-width='2'/><text x='50' y='58' font-size='26' text-anchor='middle' dominant-baseline='central'>1</text><text x='98' y='38' font-size='11' fill='#9ca3af' text-anchor='middle'>+2</text><rect x='115' y='22' width='80' height='56' rx='12' fill='#fce7f3' stroke='#f9a8d4' stroke-width='2'/><text x='155' y='58' font-size='26' text-anchor='middle' dominant-baseline='central'>3</text><text x='203' y='38' font-size='11' fill='#9ca3af' text-anchor='middle'>+3</text><rect x='220' y='22' width='80' height='56' rx='12' fill='#fce7f3' stroke='#f9a8d4' stroke-width='2'/><text x='260' y='58' font-size='26' text-anchor='middle' dominant-baseline='central'>6</text><text x='308' y='38' font-size='11' fill='#9ca3af' text-anchor='middle'>+4</text><rect x='325' y='22' width='80' height='56' rx='12' fill='#fce7f3' stroke='#f9a8d4' stroke-width='2'/><text x='365' y='58' font-size='26' text-anchor='middle' dominant-baseline='central'>10</text><text x='413' y='38' font-size='11' fill='#9ca3af' text-anchor='middle'>+5</text><rect x='430' y='22' width='80' height='56' rx='12' fill='#fff7ed' stroke='#fb923c' stroke-width='2.5' stroke-dasharray='6 3'/><text x='470' y='58' font-size='26' text-anchor='middle' dominant-baseline='central'>?</text></svg>",
+      "correctAnswer": "15",
+      "options": ["13", "14", "15", "16"],
+      "answerType": "multiple-choice"
+    },
+    {
+      "id": 33,
+      "type": "pattern",
+      "difficulty": 3,
+      "category": "Pattern Recognition",
+      "questionText": "The pattern changes colour AND count. What comes next?",
+      "graphic": "<svg width='100%' viewBox='0 0 520 120' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='20' width='80' height='80' rx='10' fill='#fef2f2' stroke='#fca5a5' stroke-width='2'/><circle cx='50' cy='60' r='18' fill='#ef4444'/><rect x='110' y='20' width='80' height='80' rx='10' fill='#fef2f2' stroke='#fca5a5' stroke-width='2'/><circle cx='140' cy='60' r='16' fill='#ef4444'/><circle cx='170' cy='60' r='16' fill='#ef4444'/><rect x='210' y='20' width='80' height='80' rx='10' fill='#dcfce7' stroke='#86efac' stroke-width='2'/><rect x='230' y='40' width='40' height='40' rx='5' fill='#22c55e'/><rect x='310' y='20' width='80' height='80' rx='10' fill='#dcfce7' stroke='#86efac' stroke-width='2'/><rect x='325' y='40' width='30' height='30' rx='4' fill='#22c55e'/><rect x='360' y='40' width='30' height='30' rx='4' fill='#22c55e'/><rect x='410' y='10' width='100' height='100' rx='10' fill='#fff7ed' stroke='#fb923c' stroke-width='2.5' stroke-dasharray='6 3'/><text x='460' y='67' font-size='36' text-anchor='middle' dominant-baseline='central'>?</text></svg>",
+      "correctAnswer": "C",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><circle cx='25' cy='40' r='14' fill='#ef4444'/><circle cx='55' cy='40' r='14' fill='#ef4444'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='27' y='27' width='26' height='26' rx='4' fill='#22c55e'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='6' y='27' width='20' height='20' rx='3' fill='#22c55e'/><rect x='30' y='27' width='20' height='20' rx='3' fill='#22c55e'/><rect x='54' y='27' width='20' height='20' rx='3' fill='#22c55e'/></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><circle cx='25' cy='40' r='14' fill='#22c55e'/><circle cx='55' cy='40' r='14' fill='#22c55e'/></svg>"
+      ]
+    },
+    {
+      "id": 34,
+      "type": "recycling",
+      "difficulty": 2,
+      "category": "Real World",
+      "questionText": "A cardboard box 📦 — which coloured bin does it go in?",
+      "correctAnswer": "B",
+      "answerType": "svg-choice",
+      "optionSVGs": [
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='15' y='20' width='50' height='50' rx='8' fill='#facc15' stroke='#eab308' stroke-width='2'/><text x='40' y='50' font-size='22' text-anchor='middle' dominant-baseline='central'>🗑️</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='15' y='20' width='50' height='50' rx='8' fill='#3b82f6' stroke='#1d4ed8' stroke-width='2'/><text x='40' y='50' font-size='22' text-anchor='middle' dominant-baseline='central'>🗑️</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='15' y='20' width='50' height='50' rx='8' fill='#22c55e' stroke='#15803d' stroke-width='2'/><text x='40' y='50' font-size='22' text-anchor='middle' dominant-baseline='central'>🗑️</text></svg>",
+        "<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><rect width='80' height='80' rx='10' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1.5'/><rect x='15' y='20' width='50' height='50' rx='8' fill='#374151' stroke='#111827' stroke-width='2'/><text x='40' y='50' font-size='22' text-anchor='middle' dominant-baseline='central'>🗑️</text></svg>"
+      ]
+    },
+    {
+      "id": 35,
+      "type": "creative-thinking",
+      "difficulty": 2,
+      "category": "Logical Thinking",
+      "questionText": "There are 5 birds on a fence 🐦🐦🐦🐦🐦. A cat scares 2 away. How many birds are left?",
+      "correctAnswer": "3",
+      "options": ["2", "3", "5", "7"],
+      "answerType": "multiple-choice"
+    }
+  ]
+}
